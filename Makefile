@@ -10,6 +10,7 @@ CRAZYFLIE_BASE ?= ./
 -include tools/make/config.mk
 
 CFLAGS += $(EXTRA_CFLAGS)
+CFLAGS += -DDISABLE_LIGHTHOUSE_DRIVER=0
 
 ######### JTAG and environment configuration ##########
 OPENOCD           ?= openocd
